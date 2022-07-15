@@ -1,0 +1,20 @@
+.pointsCountContainer{
+  background-color: transparent;
+}
+
+.pointsCountTitle{
+  color: #ACB1B9;
+  position: relative;
+}
+
+.pointsCountValue{
+  position: absolute;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  background-color: #F71963;
+  padding: 2px;
+}

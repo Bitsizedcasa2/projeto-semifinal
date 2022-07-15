@@ -1,0 +1,11 @@
+.pointsCountContainer{
+  background-color: #000;
+}
+
+.pointsCountTitle{
+  color: black;
+}
+
+.pointsCountValue{
+  color: red;
+}

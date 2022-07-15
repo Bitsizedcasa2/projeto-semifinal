@@ -1,0 +1,12 @@
+{
+  "vtex.menu@2.x:menu#points-count-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+    ]
+  }
+}

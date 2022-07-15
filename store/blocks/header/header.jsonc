@@ -19,7 +19,7 @@
       "fullWidth": true
     }
   },
-  
+
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
@@ -61,6 +61,7 @@
       "search-bar",
       "locale-switcher",
       "login",
+      "points-count",
       "minicart.v2"
     ]
   },
