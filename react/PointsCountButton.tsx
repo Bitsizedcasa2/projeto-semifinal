@@ -4,16 +4,17 @@ import { IoWalletOutline } from 'react-icons/io5'
 
 interface PointCountButtonProps {
   children?: ReactNode;
-  handleActiveMenu: () => void;
+  handleActiveMenu: (value: boolean) => void;
+  menuIsActive: boolean;
 }
 
-export default function PointCountButton({ children, handleActiveMenu }: PointCountButtonProps){
+export default function PointCountButton({ children, handleActiveMenu, menuIsActive }: PointCountButtonProps){
   return (
     <div className={s.pointsCountContainer}>
       <button
         className={s.pointsCountBtn}
-        onClick={handleActiveMenu}
-        onBlur={handleActiveMenu}
+        onClick={() => handleActiveMenu(!menuIsActive)}
+        onBlur={() => handleActiveMenu(false)}
       >
         <IoWalletOutline/>
       </button>
