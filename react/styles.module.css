@@ -54,9 +54,10 @@
 .pointsCountTitle{
   color: #ACB1B9;
   position: relative;
+  white-space: nowrap;
 }
 
 .pointsCountValue{
   color: #50d387;
-  white-space: nowrap ;
+  white-space: nowrap;
 }

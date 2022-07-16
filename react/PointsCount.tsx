@@ -1,38 +1,35 @@
-import React, { useState } from 'react'
-// import { useCssHandles } from 'vtex.css-handles'
-import s from './styles.module.css'
-import { IoWalletOutline } from 'react-icons/io5'
+import React, {  useState } from 'react'
+import { useRenderSession } from 'vtex.session-client'
+import PointCountMenu from './PointCountMenu';
+import PointCountButton from './PointsCountButton';
 
-// const CSS_HANDLES = [
-//   "pointsCountContainer",
-//   "button",
-//   "pointsCountTitle",
-//   "pointsCountValue"
-// ]
 
 export default function PointsCount(){
   const [ menuIsActive, setMenuIsActive ] = useState(false);
 
-  // const s = useCssHandles(CSS_HANDLES)
+  function HandleActiveMenu(){
+    setMenuIsActive(!menuIsActive)
+  }
+
+  const { loading, session } = useRenderSession();
+
+  if(!loading){
+    const newUserData = {
+      userId: session.namespaces.profile.id?.value,
+      email: session.namespaces.profile.email?.value,
+      isAuthenticated: session.namespaces.profile.isAuthenticated.value === 'true' ? true : false
+    }
+
+    return (
+      <PointCountButton handleActiveMenu={HandleActiveMenu}>
+        <PointCountMenu menuIsActive={menuIsActive} userData={newUserData}/>
+      </PointCountButton>
+    )
+  }
 
   return (
-    <div className={s.pointsCountContainer}>
-      <button
-        className={s.pointsCountBtn}
-        onClick={() => setMenuIsActive(!menuIsActive)}
-        onBlur={() => setMenuIsActive(!menuIsActive)}
-      >
-        <IoWalletOutline/>
-      </button>
-
-      <div className={`${s.pointsCountMenu}
-      ${menuIsActive ? s.isActive : ""}`}>
-        <p className={s.pointsCountTitle}>Disponível:
-        </p>
-        <p className={s.pointsCountValue}>2000 pts</p>
-
-      </div>
-
-    </div>
+    <PointCountButton handleActiveMenu={HandleActiveMenu}>
+      <PointCountMenu menuIsActive={menuIsActive}/>
+    </PointCountButton>
   )
 }
