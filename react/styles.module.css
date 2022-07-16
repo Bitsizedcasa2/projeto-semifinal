@@ -1,20 +1,63 @@
 .pointsCountContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+
+  font-family: San Francisco,-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #B9B9BA;
+}
+
+.pointsCountBtn{
+  font: inherit;
+  cursor: pointer;
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .75rem;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.pointsCountBtn:hover{
+  background-color: #d2defc;
+}
+
+.pointsCountBtn svg{
+  color: #979899;
+  width: 20px;
+  height: 20px;
+}
+
+.pointsCountMenu{
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  right: 0;
+  padding: 5px 12px;
+  border-bottom: 2px solid #cacbcc ;
+
+  display: none;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.isActive {
+  display: flex;
 }
 
 .pointsCountTitle{
   color: #ACB1B9;
   position: relative;
+  white-space: nowrap;
 }
 
 .pointsCountValue{
-  position: absolute;
-  display: flex;
-  font-size: 12px;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  border-radius: 50%;
-  background-color: #F71963;
-  padding: 2px;
+  color: #50d387;
+  white-space: nowrap;
 }

@@ -98,6 +98,7 @@
       "logo#mobile",
       "flex-layout.col#spacer",
       "login",
+      "points-count",
       "minicart.v2"
     ],
     "props": {

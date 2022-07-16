@@ -1,20 +1,35 @@
-import React from 'react'
-// import { useCssHandles } from 'vtex.css-handles'
-import s from './styles.module.css'
+import React, {  useState } from 'react'
+import { useRenderSession } from 'vtex.session-client'
+import PointCountMenu from './PointCountMenu';
+import PointCountButton from './PointsCountButton';
 
-// const CSS_HANDLES = [
-//   "pointsCountContainer",
-//   "pointsCountTitle",
-//   "pointsCountValue"
-// ]
 
 export default function PointsCount(){
+  const [ menuIsActive, setMenuIsActive ] = useState(false);
 
-  // const s = useCssHandles(CSS_HANDLES)
+  function HandleActiveMenu(){
+    setMenuIsActive(!menuIsActive)
+  }
+
+  const { loading, session } = useRenderSession();
+
+  if(!loading){
+    const newUserData = {
+      userId: session.namespaces.profile.id?.value,
+      email: session.namespaces.profile.email?.value,
+      isAuthenticated: session.namespaces.profile.isAuthenticated.value === 'true' ? true : false
+    }
+
+    return (
+      <PointCountButton handleActiveMenu={HandleActiveMenu}>
+        <PointCountMenu menuIsActive={menuIsActive} userData={newUserData}/>
+      </PointCountButton>
+    )
+  }
 
   return (
-    <div className={s.pointsCountContainer}>
-      <p className={s.pointsCountTitle}>Pontos: <span className={s.pointsCountValue}>20000</span></p>
-    </div>
+    <PointCountButton handleActiveMenu={HandleActiveMenu}>
+      <PointCountMenu menuIsActive={menuIsActive}/>
+    </PointCountButton>
   )
 }
