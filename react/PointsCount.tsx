@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRenderSession } from 'vtex.session-client'
 import PointCountMenu from './PointCountMenu';
 import PointCountButton from './PointsCountButton';
@@ -7,8 +7,17 @@ import PointCountButton from './PointsCountButton';
 export default function PointsCount(){
   const [ menuIsActive, setMenuIsActive ] = useState(false);
 
-  function HandleActiveMenu(){
-    setMenuIsActive(!menuIsActive)
+  useEffect(() => {
+
+    window.addEventListener('scroll', () => {
+      HandleActiveMenu(false)
+    });
+
+  }, []);
+
+  // consertar o onBlur
+  function HandleActiveMenu(value: boolean){
+    setMenuIsActive(value)
   }
 
   const { loading, session } = useRenderSession();
@@ -21,14 +30,14 @@ export default function PointsCount(){
     }
 
     return (
-      <PointCountButton handleActiveMenu={HandleActiveMenu}>
+      <PointCountButton handleActiveMenu={HandleActiveMenu} menuIsActive={menuIsActive} >
         <PointCountMenu menuIsActive={menuIsActive} userData={newUserData}/>
       </PointCountButton>
     )
   }
 
   return (
-    <PointCountButton handleActiveMenu={HandleActiveMenu}>
+    <PointCountButton handleActiveMenu={HandleActiveMenu} menuIsActive={menuIsActive} >
       <PointCountMenu menuIsActive={menuIsActive}/>
     </PointCountButton>
   )
