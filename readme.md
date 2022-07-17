@@ -18,4 +18,6 @@
 ```
 bts-2-store: loja
 points-count-component: componente de pontos/cashback
+api-aws: api de pontos/cashback
+    - https://kefwqfj08e.execute-api.us-east-1.amazonaws.com
 ```
