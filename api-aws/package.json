@@ -1,0 +1,11 @@
+{
+  "name": "api-aws",
+  "version": "0.1.0",
+  "description": "hc aws api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hc-bitsized-casa-2",
+  "license": "ISC"
+}
