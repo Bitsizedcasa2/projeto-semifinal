@@ -1,3 +1,12 @@
+.logoContainer {
+  height: 100%;
+}
+
+.logoImage {
+  width: 80px;
+  height: 80px;
+}
+
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
