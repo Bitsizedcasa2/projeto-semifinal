@@ -1,11 +1,11 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#shop",
+      "menu-item#store",
       "menu-item#about-us"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#store": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -13,10 +13,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "Store",
+        "text": "Store"
       }
     }
   },
