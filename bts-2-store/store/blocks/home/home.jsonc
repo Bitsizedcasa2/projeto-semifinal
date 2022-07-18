@@ -58,7 +58,8 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "138" // Mostrando a coleção BitsizedTech
     }
   },
   "slider-layout#demo-products": {
