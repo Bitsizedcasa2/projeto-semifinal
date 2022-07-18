@@ -33,7 +33,7 @@
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
-  color: #ffffff;
+  color: #D1C1EB;
   font-size: 14px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .flexRow--deals {
-  background-color: #0F3E99;
+  background-color: #512DA8;
   padding: 14px 0px;
 }
 
@@ -96,3 +96,6 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+
+.colors{ color: #512DA8; color: #673AB7; color: #D1C1EB; color: #8753FF; }
