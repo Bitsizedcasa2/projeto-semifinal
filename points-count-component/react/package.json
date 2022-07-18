@@ -1,16 +1,16 @@
 {
-  "name": "CHANGE_ME",
+  "name": "PointsCount",
   "version": "0.0.0",
   "scripts": {
     "test": "vtex-test-tools test"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "apollo-client": "^2.6.8",
     "react": "^16.12.0",
     "react-apollo": "^3.1.3",
     "react-dom": "^16.12.0",
-    "react-intl": "^3.12.0",
-    "react-icons": "^4.4.0"
+    "react-intl": "^3.12.0"
   },
   "devDependencies": {
     "@apollo/react-testing": "^3.1.3",
