@@ -39,7 +39,7 @@
           "description": "Mouses gamer a partir de R$110.",
           "link": {
             "props": {
-              "href": "https://thiagolpbasicblocks2--bitsized.myvtex.com/bitsizedtech/eletronicos/mouses"
+              "url": "/bitsizedtech/eletronicos/mouses"
             }
           }
         }
@@ -86,6 +86,10 @@
         "desktop": 4,
         "tablet": 3,
         "phone": 1
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
       },
       "infinite": true,
       "fullWidth": false,
