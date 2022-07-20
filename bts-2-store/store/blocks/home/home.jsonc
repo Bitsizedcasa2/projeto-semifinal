@@ -22,12 +22,26 @@
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "image": "assets/images/banner-home-01.png",
+          "mobileImage": "assets/images/banner-home-01.png",
+          "description": "A cada R$1 em comprar ganhe 1 ponto para gastar como quiser!",
+          "link": "/bitsizedtech/eletronicos"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "assets/images/banner-home-03.png",
+          "mobileImage": "assets/images/banner-home-03.png",
+          "description": "Ofertas de notebooks a partir de R$2900",
+          "link": "/bitsizedtech/eletronicos/notebooks"
+        },
+        {
+          "image": "assets/images/banner-home-02.png",
+          "mobileImage": "assets/images/banner-home-02.png",
+          "description": "Mouses gamer a partir de R$110.",
+          "link": {
+            "props": {
+              "href": "https://thiagolpbasicblocks2--bitsized.myvtex.com/bitsizedtech/eletronicos/mouses"
+            }
+          }
         }
       ]
     }
