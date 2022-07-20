@@ -4,7 +4,14 @@
 
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
-  min-height: 450px;
+  height: 100%;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+:global(.vtex-slider-layout-0-x-caretIcon--carousel),
+:global(.vtex-slider-layout-0-x-caretIcon--shelf){
+  color: #FA7219;
 }
 
 .sliderTrackContainer {

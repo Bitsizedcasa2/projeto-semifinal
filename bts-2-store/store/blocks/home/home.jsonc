@@ -35,11 +35,7 @@
           "image": "assets/images/banner-home-02.png",
           "mobileImage": "assets/images/banner-home-02.png",
           "description": "Mouses gamer a partir de R$110.",
-          "link": {
-            "props": {
-              "url": "/bitsizedtech/eletronicos/mouses"
-            }
-          }
+          "link": "/bitsizedtech/eletronicos/mouses"
         }
       ]
     }
