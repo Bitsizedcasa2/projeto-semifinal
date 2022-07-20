@@ -12,9 +12,7 @@
   "flex-layout.row#footer-1-desktop": {
     "children": [
       "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
       "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
       "footer-spacer",
       "social-networks"
     ],
@@ -29,20 +27,12 @@
     "props": {
       "socialNetworks": [
         {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
           "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
+          "url": "https://www.instagram.com/hiringcoders/"
         },
         {
           "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
+          "url": "https://www.youtube.com/c/HiringCoders"
         }
       ]
     }

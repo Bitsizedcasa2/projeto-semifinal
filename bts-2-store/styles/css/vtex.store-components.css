@@ -14,7 +14,7 @@
 }
 
 .newsletter {
-  background-color: #03054e;
+  background-color: #8753FF;
   max-width: 1528px;
   margin: 0 auto;
 }
@@ -24,30 +24,30 @@
 }
 
 .label {
-  color: #fff;
+  color: #e6f1e6;
   font-size: 26px;
 }
 
 .inputGroup {
   padding-bottom: 4px;
   display: flex;
-  color: #fff;
+  color: #e6f1e6;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
-  color: #fff;
+  color: #e6f1e6;
   border: none;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
-  color: #fff;
+  color: #e6f1e6;
   font-size: 16px;
 }
 
 .inputGroup :global(.vtex-button) {
   background-color: transparent;
-  color: #fff;
+  color: #e6f1e6;
   border: none;
   margin-right: -24px;
 }
@@ -103,7 +103,7 @@
 }
 
 .productNameContainer {
-  color: #3f3f40;
+  color: #e6f1e6;
   font-weight: bold;
   font-size: 30px;
 }

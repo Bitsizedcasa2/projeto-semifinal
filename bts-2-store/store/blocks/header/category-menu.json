@@ -40,26 +40,11 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
       "menu-item#category-apparel-accessories",
       "menu-item#category-apparel-eyeglasses"
     ]
   },
-  "menu-item#category-apparel-clothing": {
-    "props": {
-      "id": "menu-item-category-apparel-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/clothing/",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    }
-  },
+
   "menu-item#category-apparel-accessories": {
     "props": {
       "id": "menu-item-category-apparel-accessories",
