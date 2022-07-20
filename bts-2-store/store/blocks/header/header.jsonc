@@ -29,10 +29,21 @@
       "fullWidth": true
     },
     "children": [
+      "logo#desktop-top-bar",
       "vtex.menu@2.x:menu#websites",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#institutional"
     ]
+  },
+  "logo#desktop-top-bar": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logo.png",
+      "width": "180",
+      "height": "12",
+      "blockClass": "logo-top-bar"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -112,7 +123,6 @@
   "drawer": {
     "children": ["menu#drawer"]
   },
-
   "menu#drawer": {
     "children": [
       "menu-item#category-eletronics"
