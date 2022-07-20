@@ -22,12 +22,26 @@
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "image": "assets/images/banner-home-01.png",
+          "mobileImage": "assets/images/banner-home-01.png",
+          "description": "A cada R$1 em comprar ganhe 1 ponto para gastar como quiser!",
+          "link": "/bitsizedtech/eletronicos"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "assets/images/banner-home-03.png",
+          "mobileImage": "assets/images/banner-home-03.png",
+          "description": "Ofertas de notebooks a partir de R$2900",
+          "link": "/bitsizedtech/eletronicos/notebooks"
+        },
+        {
+          "image": "assets/images/banner-home-02.png",
+          "mobileImage": "assets/images/banner-home-02.png",
+          "description": "Mouses gamer a partir de R$110.",
+          "link": {
+            "props": {
+              "url": "/bitsizedtech/eletronicos/mouses"
+            }
+          }
         }
       ]
     }
@@ -41,13 +55,17 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
       "blockClass": "carousel"
     }
   },
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Nossos Produtos",
       "blockClass": "shelfTitle"
     }
   },
@@ -59,7 +77,7 @@
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
-      "collection" : "138"
+      "collection": "138" // Mostrando a coleção BitsizedTech
     }
   },
   "slider-layout#demo-products": {
@@ -68,6 +86,10 @@
         "desktop": 4,
         "tablet": 3,
         "phone": 1
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
       },
       "infinite": true,
       "fullWidth": false,

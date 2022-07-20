@@ -1,3 +1,24 @@
+.logoImage--logo-top-bar{
+  width: 70px;
+  height: 70px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--menu-link){
+  overflow: hidden !important;
+
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-link){
+  overflow: hidden;
+  align-items: center;
+  justify-items: center;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer),
+:global(.vtex-store-drawer-0-x-closeIconButton){
+  color: #512DA8;
+}
+
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import s from './styles.module.css'
-import { IoWalletOutline } from 'react-icons/io5'
+import { IoWalletOutline } from '@react-icons/all-files/io5/IoWalletOutline'
 
 interface PointCountButtonProps {
   children?: ReactNode;

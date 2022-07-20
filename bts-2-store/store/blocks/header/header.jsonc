@@ -29,10 +29,21 @@
       "fullWidth": true
     },
     "children": [
+      "logo#desktop-top-bar",
       "vtex.menu@2.x:menu#websites",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#institutional"
     ]
+  },
+  "logo#desktop-top-bar": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logo.png",
+      "width": "180",
+      "height": "12",
+      "blockClass": "logo-top-bar"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -77,11 +88,12 @@
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
+
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "assets/images/logo-text.png",
       "width": "180",
       "height": "12"
     }
@@ -111,23 +123,19 @@
   "drawer": {
     "children": ["menu#drawer"]
   },
-
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-eletronics"
     ],
     "props": {
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "assets/images/logo-text-mobile.png",
       "width": "77.5",
       "height": "27.5"
     }
