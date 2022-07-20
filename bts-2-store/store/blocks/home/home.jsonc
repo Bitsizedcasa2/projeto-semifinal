@@ -55,6 +55,10 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
       "blockClass": "carousel"
     }
   },
