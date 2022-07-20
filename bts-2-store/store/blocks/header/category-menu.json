@@ -19,7 +19,8 @@
         "noFollow": false,
         "tagTitle": "Apparel & Accessories",
         "text": "Eletrônicos"
-      }
+      },
+      "blockClass": "menu-main"
     },
     "blocks": [
       "vtex.menu@2.x:submenu#category-eletronics"
@@ -57,7 +58,8 @@
         "noFollow": false,
         "tagTitle": "Notebooks",
         "text": "Notebooks"
-      }
+      },
+      "blockClass": "subMenu-main"
     }
   },
   "menu-item#category-eletronics-teclados": {
@@ -72,7 +74,8 @@
         "noFollow": false,
         "tagTitle": "Teclados",
         "text": "Teclados"
-      }
+      },
+      "blockClass": "subMenu-main"
     }
   },
   "menu-item#category-eletronics-mouses": {
@@ -87,7 +90,8 @@
         "noFollow": false,
         "tagTitle": "Mouses",
         "text": "Mouses"
-      }
+      },
+      "blockClass": "subMenu-main"
     }
   },
   "menu-item#category-eletronics-cadeiras": {
@@ -102,7 +106,8 @@
         "noFollow": false,
         "tagTitle": "Cadeiras Gamers",
         "text": "Cadeiras Gamers"
-      }
+      },
+      "blockClass": "subMenu-main"
     }
   },
   "menu-item#category-eletronics-headsets": {
@@ -117,7 +122,8 @@
         "noFollow": false,
         "tagTitle": "Headsets",
         "text": "Headsets"
-      }
+      },
+      "blockClass": "subMenu-main"
     }
   }
 }
