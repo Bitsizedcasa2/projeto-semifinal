@@ -109,22 +109,6 @@
       },
       "blockClass": "subMenu-main"
     }
-  },
-  "menu-item#category-eletronics-headsets": {
-    "props": {
-      "id": "menu-item-category-eletronics-headsets",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bitsizedtech/eletronicos/headsets",
-        "noFollow": false,
-        "tagTitle": "Headsets",
-        "text": "Headsets"
-      },
-      "blockClass": "subMenu-main"
-    }
   }
 }
 
