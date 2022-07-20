@@ -29,7 +29,7 @@
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   background-color: #e6f1e6;
   padding: 0px;
 }

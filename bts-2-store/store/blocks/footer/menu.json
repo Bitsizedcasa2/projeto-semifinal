@@ -126,7 +126,7 @@
         "href": "/bitsizedtech/eletronicos/cadeiras",
         "noFollow": true,
         "tagTitle": "Cadeiras",
-        "text": "Cadeiras"
+        "text": "Cadeiras Gamers"
       }
     }
   },
@@ -144,8 +144,8 @@
   "menu-item#decoration-mobile": {
     "props": {
       "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
+        "tagTitle": "Eletronicos",
+        "text": "Eletronicos"
       }
     },
     "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
@@ -184,10 +184,8 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#notebooks",
-      "menu-item#teclados",
-      "menu-item#mouses",
-      "menu-item#cadeiras"
+      "menu-item#news",
+      "menu-item#blackfriday"
     ]
   }
 }
