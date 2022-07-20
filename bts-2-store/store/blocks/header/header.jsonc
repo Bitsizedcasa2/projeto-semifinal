@@ -55,7 +55,7 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.row#logo-desktop",
+      "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
@@ -65,15 +65,11 @@
       "minicart.v2"
     ]
   },
-  "flex-layout.row#logo-desktop": {
+  "flex-layout.col#logo-desktop": {
     "props": {
-      "blockClass": "logoDesktop",
-      "verticalAlign": "middle",
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "rowGap": 0
+      "verticalAlign": "middle"
     },
-    "children": ["logo#desktop",  "rich-text#logo-text"]
+    "children": ["logo#desktop"]
   },
   "flex-layout.col#category-menu": {
     "props": {
@@ -81,19 +77,12 @@
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
-  "rich-text#logo-text": {
-    "props": {
-      "blockClass": "logoText",
-      "text": "BitsizedTech",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER"
-    }
-  },
+
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/images/logo.png",
+      "url": "assets/images/logo-text.png",
       "width": "180",
       "height": "12"
     }
@@ -136,7 +125,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "assets/images/logo-text-mobile.png",
       "width": "77.5",
       "height": "27.5"
     }
