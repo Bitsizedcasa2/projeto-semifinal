@@ -9,9 +9,6 @@
 - Franco Ramires
 - Kareen Castro
 - Kassia Silva
-- Magali Marques
-- Marcos Machado
-- Marcus Vinicius
 - Thiago L P
 - Augusto Rickes
 
